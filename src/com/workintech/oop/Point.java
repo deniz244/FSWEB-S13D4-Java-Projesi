@@ -33,7 +33,11 @@ public class Point {
     }
 
     public double distance(Point p){
-        return distance(p.x,p.y);
+        if(p != null ){
+            return distance(p.x,p.y);
+        }
+        System.out.println("Point can't be null");
+        return -1;
         //return Math.sqrt(Math.pow(getX()-p.x,2) + Math.pow(getY()-p.y,2));
         // getX getY yerine this.x/y hatta direk x/y de yazılabilirdi
     }

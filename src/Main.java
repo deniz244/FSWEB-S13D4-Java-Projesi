@@ -1,9 +1,7 @@
 import com.workintech.oop.Player;
 import com.workintech.oop.Point;
+import com.workintech.oop.Weapon;
 
-import java.io.Closeable;
-
-import static com.workintech.oop.Weapon.SWORD;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +24,8 @@ public class Main {
 
         System.out.println("-------------Player Sınıfı-------------------");
 
-        Player p1 = new Player("Deniz", 20, SWORD);
+        Player p1 = new Player("Deniz", -20, Weapon.SWORD);
+        Player p2 = new Player("Ali", 100, Weapon.CROSS_BOW);
 
         System.out.println("Health remaining: " + p1.healthRemaining());
 
