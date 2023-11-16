@@ -29,15 +29,15 @@ public class Point {
 
     //distance methods
     public double distance(){
-        return Math.sqrt(Math.pow(this.x-0,2) + Math.pow(this.y-0,2));
+        return Math.sqrt(Math.pow(getX(),2) + Math.pow(getY(),2));
     }
 
     public double distance(Point p){
-        return Math.sqrt(Math.pow(this.x-p.x,2) + Math.pow(this.y-p.y,2));
+        return Math.sqrt(Math.pow(getX()-p.x,2) + Math.pow(getY()-p.y,2));
     }
 
     public double distance(int a, int b){
-        return Math.sqrt(Math.pow(this.x-a,2) + Math.pow(this.y-b,2));
+        return Math.sqrt(Math.pow(getX()-a,2) + Math.pow(getY()-b,2));
     }
 
 
