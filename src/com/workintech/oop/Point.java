@@ -35,6 +35,7 @@ public class Point {
     public double distance(Point p){
         return distance(p.x,p.y);
         //return Math.sqrt(Math.pow(getX()-p.x,2) + Math.pow(getY()-p.y,2));
+        // getX getY yerine this.x/y hatta direk x/y de yazılabilirdi
     }
 
     public double distance(int a, int b){
